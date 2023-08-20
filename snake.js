@@ -58,5 +58,10 @@ class Snake {
         this.snakeBody.unshift(newHead)
         this.snakeBody.pop()
     }
+    eatApple(){
+        let head = this.snakeBody[0]
+        let cell = new Cell (head.x, head.y)
+        this.snakeBody.unshift(cell)
+    }
 }
 

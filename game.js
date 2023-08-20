@@ -57,6 +57,12 @@ class Gameplay {
         this.drawRect(cell.x,cell.y,this.unitSize,this.unitSize,this.snake.color)}
 
     }
+    isAppleEaten() {
+        if (this.snakeBody.x == this.apple.x && this.snakeBody.y == this.apple.y){
+          game.creatApple();
+          snake.eatApple();
+        }
+    }
 
 }
 
